@@ -17,7 +17,6 @@ def main():
     max_students = 0
     for i in range(num_teas):
         for j in valid_toppings[i + 1]:
-            print(j, j-1, topping_prices)
             cost = tea_prices[i] + topping_prices[j - 1]
             if cost <= money:
                 max_students = max(max_students, money // cost)

@@ -19,7 +19,6 @@ def main():
         treasure += "Silver"
     elif 0 <= power < 3:
         treasure += "Copper"
-
     if victory and treasure:
         print(f"{victory} or {treasure}")
     elif victory and not treasure:
